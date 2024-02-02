@@ -8,11 +8,11 @@ const screen = {
         <p>${user.bio ?? "Não possui bio cadastrada 😭"}</p>
         <div class="followers-following-area">
             <div class="followers">
-            <P class="seguidores"><img src="imagem/user-group-solid.svg" width="20px" height="20px" alt="Logo seguidores"></img> Seguidores</p>
+            <P class="seguidores"><img src="src/imagem/user-group-solid.svg" width="20px" height="20px" alt="Logo seguidores"></img> Seguidores</p>
             <p>${user.followers}</p>
             </div>
             <div class="following">
-            <p class="seguindo"><img src="imagem/users-solid.svg" width="20px" height="20px" alt="Logo seguindo"></img> Seguindo</p>
+            <p class="seguindo"><img src="src/imagem/users-solid.svg" width="20px" height="20px" alt="Logo seguindo"></img> Seguindo</p>
             <p>${user.following}</p>
         </div>
         </div>    
@@ -23,16 +23,16 @@ const screen = {
       repo => {
       repositoriesItens += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a>
                                <div class="repo-stats">
-                                    <p><img src="imagem/code-fork-solid.svg" width="20px" height="20px" title="forks"> </i>${repo.forks_count !== 0
+                                    <p><img src="src/imagem/code-fork-solid.svg" width="20px" height="20px" title="forks"> </i>${repo.forks_count !== 0
           ? repo.forks_count
           : "Sem forks"}</img></p>
-                                    <p><img src="imagem/star.svg" width="20px" height="20px" title="stargazers"> </i>${repo.stargazers_count !== 0
+                                    <p><img src="src/imagem/star.svg" width="20px" height="20px" title="stargazers"> </i>${repo.stargazers_count !== 0
           ? repo.stargazers_count
           : "Sem estrelas"}</img></p>
-                                    <p><img src="imagem/eye.svg" width="20px" height="20px" title="watchers"> </i>${repo.watchers_count !== 0
+                                    <p><img src="src/imagem/eye.svg" width="20px" height="20px" title="watchers"> </i>${repo.watchers_count !== 0
           ? repo.watchers_count
           : "Sem observadores"}</img></p>
-                                    <p><img src="imagem/laptop-code-solid.svg" width="20px" height="20px" title="language"> </i>${repo.language ?? "Sem linguagem"}</img></p>
+                                    <p><img src="src/imagem/laptop-code-solid.svg" width="20px" height="20px" title="language"> </i>${repo.language ?? "Sem linguagem"}</img></p>
                                     </div>
                                     </li>`;
     });
